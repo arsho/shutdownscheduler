@@ -1,0 +1,18 @@
+name: shutdownscheduler
+version: git
+summary: Schedule shutdown
+description: |
+  ShutdownScheduler schedules automatic shutdown of your machine
+
+grade: devel
+confinement: devmode
+
+apps:
+  shutdownscheduler:
+    command: main
+
+parts:
+  shutdownscheduler:
+    plugin: python
+    python-version: python3
+    source: .
